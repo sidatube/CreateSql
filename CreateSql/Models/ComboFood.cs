@@ -7,7 +7,7 @@ namespace CreateSql.Models
 {
     public class FoodInfo
     {
-        public int FoodId { get; set; }
+        public Food Food { get; set; }
         public int qty { get; set; }
     }
 
@@ -22,7 +22,7 @@ namespace CreateSql.Models
         public string Name { set; get; }
         public Image Image { get; set; }
         public decimal Price { get; set; }
-        public List<ComboInfo> ComboInfo { get; set; }
+        public List<FoodInfo> FoodInfos { get; set; }
         public int Amount { get; set; }
         public int BranchId { get; set; }
         public virtual Bracnh Bracnh { get; set; }
